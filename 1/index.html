@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>HTMX Page Changer Example</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="data:;base64,=">
+	<link href="default.css" rel="stylesheet">
+	<script src="js/htmx.min.js"></script>
+</head>
+<body>
+<noscript>Warning: JavaScript is not enabled</noscript>
+	<div>
+		<h1 id="content">Initial Content</h1>
+		<!-- Add an htmx trigger to the button -->
+		<button hx-get="/change-content" hx-trigger="click" hx-target="#content">Change Content</button>
+	</div>
+</body>
+</html>
